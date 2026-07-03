@@ -1,87 +1,101 @@
-# 🌍 Country State City Dropdown PCF Control
+# Country State City Dropdown PCF Control
 
-A custom Power Apps Component Framework (PCF) control that provides cascading **Country**, **State**, and **City** dropdowns for Microsoft Power Apps and Dynamics 365.
+A Power Apps Component Framework (PCF) control that provides cascading Country, State, and City dropdowns using a single reusable component.
 
 ## Features
 
-* Cascading Country → State → City selection
-* Automatic filtering based on parent selection
-* Easy to configure
-* Responsive and user-friendly interface
-* Built with TypeScript and Power Apps Component Framework (PCF)
+- Single PCF component for Country, State, and City
+- Cascading dropdown functionality
+- Automatic filtering of State and City
+- Easy configuration
+- Works with Single Line of Text columns
+- Supports Model-driven Apps
 
 ---
 
-## Requirements
+## Prerequisites
 
-* Microsoft Power Apps
-* Microsoft Dataverse
-* Power Apps CLI
-* Node.js
+Before using the control, create the following **Single Line of Text** columns in your Dataverse table:
+
+| Column |
+|---------|
+| Country |
+| State |
+| City |
 
 ---
 
 ## Configuration
 
-Configure the following input properties while adding the control to a field:
+The same PCF control must be added to all three fields.
 
-| Property | Description                                     |
-| -------- | ----------------------------------------------- |
-| Country  | Column containing Country values                |
-| State    | Column containing State values                  |
-| City     | Column containing City values                   |
-| Mode     | Defines how the control behaves (if applicable) |
+### 1. Country Field
 
-After configuration:
+Add the PCF control to the **Country** column.
 
-1. Select a **Country**.
-2. The **State** dropdown is automatically filtered.
-3. Select a **State**.
-4. The **City** dropdown is automatically filtered.
+Configuration:
+
+| Property | Value |
+|----------|-------|
+| Mode | `Country` (Static Value) |
+| Country | Leave Empty |
+| State | Leave Empty |
 
 ---
 
-## Build
+### 2. State Field
 
-Install dependencies:
+Add the same PCF control to the **State** column.
 
-```bash
-npm install
-```
+Configuration:
 
-Build the control:
+| Property | Value |
+|----------|-------|
+| Mode | `State` (Static Value) |
+| Country | Bind to **Country** column |
+| State | Leave Empty |
 
-```bash
-npm run build
-```
+---
 
-Run in the test harness:
+### 3. City Field
 
-```bash
-npm start
-```
+Add the same PCF control to the **City** column.
+
+Configuration:
+
+| Property | Value |
+|----------|-------|
+| Mode | `City` (Static Value) |
+| Country | Bind to **Country** column |
+| State | Bind to **State** column |
 
 ---
 
 ## Usage
 
-1. Import the PCF solution into your Power Platform environment.
-2. Add the control to the required column on a form.
-3. Configure the input properties.
-4. Save and publish the customizations.
-5. Open the form and start using the cascading Country, State, and City dropdowns.
+1. Add the PCF control to the **Country**, **State**, and **City** fields.
+2. Configure each field as described above.
+3. Save and publish the form.
+4. Open the form.
+5. Select a Country.
+6. The State dropdown will automatically display the related states.
+7. Select a State.
+8. The City dropdown will automatically display the related cities.
+
+---
+
+## Notes
+
+- The control must be configured on all three fields.
+- The **Mode** property determines the behavior of the control.
+- Country and State bindings are required only for dependent fields.
+- All fields should be **Single Line of Text** columns.
 
 ---
 
 ## Technologies
 
-* Power Apps Component Framework (PCF)
-* TypeScript
-* Microsoft Dataverse
-* Node.js
-
----
-
-## Author
-
-**Chirag Baraiya**
+- Power Apps Component Framework (PCF)
+- TypeScript
+- Microsoft Dataverse
+- Power Apps CLI
