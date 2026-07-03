@@ -1,41 +1,47 @@
 # 🌍 Country State City Dropdown PCF Control
 
-A Power Apps Component Framework (PCF) control that provides cascading Country, State, and City dropdowns for Microsoft Power Platform and Dynamics 365.
+A custom Power Apps Component Framework (PCF) control that provides cascading **Country**, **State**, and **City** dropdowns for Microsoft Power Apps and Dynamics 365.
 
-## ✨ Features
+## Features
 
-- 🌎 Cascading Country → State → City selection
-- ⚡ Fast and responsive UI
-- 🎨 Modern dropdown interface
-- 🔧 Easy configuration
-- 💻 Built using TypeScript and Power Apps Component Framework
-- 🔄 Automatic filtering of State and City based on selected values
+* Cascading Country → State → City selection
+* Automatic filtering based on parent selection
+* Easy to configure
+* Responsive and user-friendly interface
+* Built with TypeScript and Power Apps Component Framework (PCF)
 
 ---
 
 ## Requirements
 
-- Power Apps
-- Microsoft Dataverse
-- Power Apps CLI
-- Node.js
-- PCF Development Environment
+* Microsoft Power Apps
+* Microsoft Dataverse
+* Power Apps CLI
+* Node.js
 
 ---
 
-## Installation
+## Configuration
 
-Clone the repository:
+Configure the following input properties while adding the control to a field:
 
-```bash
-git clone https://github.com/<your-username>/<repository-name>.git
-```
+| Property | Description                                     |
+| -------- | ----------------------------------------------- |
+| Country  | Column containing Country values                |
+| State    | Column containing State values                  |
+| City     | Column containing City values                   |
+| Mode     | Defines how the control behaves (if applicable) |
 
-Navigate to the project:
+After configuration:
 
-```bash
-cd <repository-name>
-```
+1. Select a **Country**.
+2. The **State** dropdown is automatically filtered.
+3. Select a **State**.
+4. The **City** dropdown is automatically filtered.
+
+---
+
+## Build
 
 Install dependencies:
 
@@ -43,13 +49,13 @@ Install dependencies:
 npm install
 ```
 
-Build the project:
+Build the control:
 
 ```bash
 npm run build
 ```
 
-Run the project:
+Run in the test harness:
 
 ```bash
 npm start
@@ -57,62 +63,25 @@ npm start
 
 ---
 
-## Configuration
+## Usage
 
-Add the PCF control to your Power Apps or Dynamics 365 form.
-
-Configure the required parameters:
-
-- Country
-- State
-- City
-
-The control automatically filters the available State values based on the selected Country and filters the City values based on the selected State.
+1. Import the PCF solution into your Power Platform environment.
+2. Add the control to the required column on a form.
+3. Configure the input properties.
+4. Save and publish the customizations.
+5. Open the form and start using the cascading Country, State, and City dropdowns.
 
 ---
 
-## Technologies Used
+## Technologies
 
-- Power Apps Component Framework (PCF)
-- TypeScript
-- Microsoft Dataverse
-- Node.js
-
----
-
-## Project Structure
-
-```
-src/
-│
-├── index.ts
-├── ControlManifest.Input.xml
-├── css/
-├── resources/
-└── generated/
-```
+* Power Apps Component Framework (PCF)
+* TypeScript
+* Microsoft Dataverse
+* Node.js
 
 ---
 
-## Future Enhancements
+## Author
 
-- Searchable dropdowns
-- Multi-language support
-- Custom styling options
-- Additional validation
-- Performance improvements
-
----
-
-## Contributing
-
-Contributions are welcome.
-
-Please fork the repository, create a feature branch, and submit a pull request.
-
-
-## License
-
-No license has been specified for this repository.
-
-Power Platform Developer
+**Chirag Baraiya**
