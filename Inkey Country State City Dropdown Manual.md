@@ -23,7 +23,7 @@ Download the latest managed solution (.zip) file from the Assets section.
 
 Import the downloaded solution into your Power Platform environment.
 
-![Screenshot](PCF_ScreenShort_Updated/Image_00.png)
+![Screenshot](PCF_ScreenShort_Updated/Image_01.png)
 
 ---
 
