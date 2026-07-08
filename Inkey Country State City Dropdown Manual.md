@@ -19,11 +19,11 @@ Navigate to the Releases section.
 
 Download the latest managed solution (.zip) file from the Assets section.
 
-![Screenshot](PCF_ScreenShort_Updated/Image_12.png)
+![Screenshot](PCF_ScreenShort_Updated/Image_13.png)
 
 Import the downloaded solution into your Power Platform environment.
 
-![Screenshot](PCF_ScreenShort_Updated/Image_13.png)
+![Screenshot](PCF_ScreenShort_Updated/Image_00.png)
 
 ---
 
