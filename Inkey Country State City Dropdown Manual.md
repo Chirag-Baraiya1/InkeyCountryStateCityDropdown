@@ -13,20 +13,20 @@ Open the GitHub repository using the link below.
 GitHub Repository: 
 https://github.com/ank8shah/InkeyCountryStateCityDropdown 
 
- ![Screenshot](PCF_ScreenShort/6.png)
+ ![Screenshot](PCF_ScreenShort/Image_11.png)
  
 
 Navigate to the Releases section.  
-
+![Screenshot](PCF_ScreenShort/Image_12.png)
  
 
 Download the latest managed solution (.zip) file from the Assets section. 
-
+![Screenshot](PCF_ScreenShort/Image_12.png)
  
 
 Import the downloaded solution into your Power Platform environment. 
 
- 
+ ![Screenshot](PCF_ScreenShort/Image_13.png)
 
  
 
@@ -54,17 +54,18 @@ Open your table in Power Apps.
 
 Edit the required Main Form.  
 
- 
+ ![Screenshot](PCF_ScreenShort/Image_00.png)
 
 Select the Country field.  
 
+![Screenshot](PCF_ScreenShort/Image_00.png)
  
 
 Go to the Components tab and add     the InkeyCountryStateCityDropdown control.(+ Component  >  Get More Component) 
 
- 
+ ![Screenshot](PCF_ScreenShort/Image_02.png)
 
- 
+ ![Screenshot](PCF_ScreenShort/Image_03.png)
 
 	 
 
@@ -91,7 +92,7 @@ Leave Empty
  
 
       6.	Under Show component on, select Web, Phone, and Tablet (or the platforms required for your app). 
-
+![Screenshot](PCF_ScreenShort/Image_06.png)
  
 
  
@@ -129,7 +130,7 @@ Under Show component on, select Web, Phone, and Tablet (or the platforms require
 This configuration automatically filters the available States based on the selected Country. 
 
  
-
+![Screenshot](PCF_ScreenShort/Image_07.png)
  
 
 Step 3: Configure the City Field 
@@ -161,7 +162,7 @@ Under Show component on, select Web, Phone, and Tablet (or the platforms require
 This configuration automatically filters the available Cities based on the selected State. 
 
  
-
+![Screenshot](PCF_ScreenShort/Image_08.png)
  
 
  
