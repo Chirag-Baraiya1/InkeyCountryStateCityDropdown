@@ -6,24 +6,24 @@ The InkeyCountryStateCityDropdown PCF control is distributed as a managed soluti
 
 ## To download the latest version:
 
-Open the GitHub repository using the link below.
+1. Open the GitHub repository using the link below.
 
-**GitHub Repository:**  
-https://github.com/ank8shah/InkeyCountryStateCityDropdown
+   **GitHub Repository:**  
+   https://github.com/ank8shah/InkeyCountryStateCityDropdown
 
-![Screenshot](PCF_ScreenShort_Updated/Image_11.png)
+   ![Screenshot](PCF_ScreenShort_Updated/Image_11.png)
 
-Navigate to the Releases section.
+2. Navigate to the Releases section.
 
-![Screenshot](PCF_ScreenShort_Updated/Image_12.png)
+   ![Screenshot](PCF_ScreenShort_Updated/Image_12.png)
 
-Download the latest managed solution (.zip) file from the Assets section.
+3. Download the latest managed solution (.zip) file from the Assets section.
 
-![Screenshot](PCF_ScreenShort_Updated/Image_13.png)
+   ![Screenshot](PCF_ScreenShort_Updated/Image_13.png)
 
-Import the downloaded solution into your Power Platform environment.
+4. Import the downloaded solution into your Power Platform environment.
 
-![Screenshot](PCF_ScreenShort_Updated/Image_01.png)
+   ![Screenshot](PCF_ScreenShort_Updated/Image_01.png)
 
 ---
 
@@ -41,23 +41,24 @@ The same PCF control is used for all three fields. The behaviour of the control 
 
 ## Step 1: Configure the Country Field
 
-Open your table in Power Apps.
+1. Open your table in Power Apps.
 
-Edit the required Main Form.
+2. Edit the required Main Form.
 
-![Screenshot](PCF_ScreenShort_Updated/Image_00.png)
+   ![Screenshot](PCF_ScreenShort_Updated/Image_00.png)
 
-Select the Country field.
+3. Select the Country field.
 
-![Screenshot](PCF_ScreenShort_Updated/Image_00.png)
+   ![Screenshot](PCF_ScreenShort_Updated/Image_00.png)
 
-Go to the Components tab and add the InkeyCountryStateCityDropdown control. (+ Component > Get More Component)
+4. Go to the Components tab and add the **InkeyCountryStateCityDropdown** control.  
+   (**+ Component > Get More Component**)
 
-![Screenshot](PCF_ScreenShort_Updated/Image_02.png)
+   ![Screenshot](PCF_ScreenShort_Updated/Image_02.png)
 
-![Screenshot](PCF_ScreenShort_Updated/Image_03.png)
+   ![Screenshot](PCF_ScreenShort_Updated/Image_03.png)
 
-Configure the properties as shown below:
+5. Configure the properties as shown below.
 
 | Property | Value |
 |----------|-------|
@@ -65,19 +66,19 @@ Configure the properties as shown below:
 | Country | Leave Empty |
 | State | Leave Empty |
 
-6. Under Show component on, select Web, Phone, and Tablet (or the platforms required for your app).
+6. Under **Show component on**, select **Web, Phone, and Tablet** (or the platforms required for your app).
 
-![Screenshot](PCF_ScreenShort_Updated/Image_06.png)
+   ![Screenshot](PCF_ScreenShort_Updated/Image_06.png)
 
 ---
 
 ## Step 2: Configure the State Field
 
-Select the State field.
+1. Select the State field.
 
-Add the same InkeyCountryStateCityDropdown control.
+2. Add the same InkeyCountryStateCityDropdown control.
 
-Configure the properties as follows:
+3. Configure the properties as follows.
 
 | Property | Value |
 |----------|-------|
@@ -85,7 +86,7 @@ Configure the properties as follows:
 | Country | Bind to the Country column |
 | State | Leave Empty |
 
-Under Show component on, select Web, Phone, and Tablet (or the platforms required for your app).
+4. Under **Show component on**, select **Web, Phone, and Tablet** (or the platforms required for your app).
 
 This configuration automatically filters the available States based on the selected Country.
 
@@ -95,11 +96,11 @@ This configuration automatically filters the available States based on the selec
 
 ## Step 3: Configure the City Field
 
-Select the City field.
+1. Select the City field.
 
-Add the same InkeyCountryStateCityDropdown control.
+2. Add the same InkeyCountryStateCityDropdown control.
 
-Configure the properties as follows:
+3. Configure the properties as follows.
 
 | Property | Value |
 |----------|-------|
@@ -107,7 +108,7 @@ Configure the properties as follows:
 | Country | Bind to the Country column |
 | State | Bind to the State column |
 
-Under Show component on, select Web, Phone, and Tablet (or the platforms required for your app).
+4. Under **Show component on**, select **Web, Phone, and Tablet** (or the platforms required for your app).
 
 This configuration automatically filters the available Cities based on the selected State.
 
@@ -119,8 +120,10 @@ This configuration automatically filters the available Cities based on the selec
 
 Once all three fields have been configured:
 
-- Save the form.
-- Publish all customizations.
-- Open a record to verify the control.
+1. Save the form.
+
+2. Publish all customizations.
+
+3. Open a record to verify the control.
 
 When you select a Country, only the related States are displayed. After selecting a State, only the corresponding Cities are available, providing a clean and intuitive cascading dropdown experience.
